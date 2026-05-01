@@ -1,0 +1,15 @@
+[project]
+name = "newton-methods"
+version = "0.1.0"
+description = "Newton-type methods with cubic regularization"
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

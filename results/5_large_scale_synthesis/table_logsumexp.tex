@@ -1,0 +1,25 @@
+\begin{table}[ht]
+  \centering
+  \caption{Synthesis results on LogSumExp (convex, scalable). $\varepsilon_g = 10^{-7}$, max\_iter = 500. Median over 2 starting points.}
+  \label{tab:synth_logsumexp}
+  \begin{tabular}{|l|l|r|r|r|r|r|}
+    \hline
+    \textbf{Problem} & \textbf{Method} & \textbf{Rate} & \textbf{$k$} & \textbf{Rej.} & \textbf{Time\,(s)} & \textbf{$\|\nabla f\|$} \\
+    \hline\hline
+    LogSumExp n=10 & Newton & 0.00 & 500 & 0 & 0.393 & --- \\
+     & NCR & 1.00 & 10 & 0 & 0.022 & 4.3e-09 \\
+     & ARC & 1.00 & 10 & 0 & 0.020 & 4.3e-09 \\
+     & ACRN & 0.50 & 448 & 447 & 2.403 & 9.9e-08 \\
+    \hline
+    LogSumExp n=20 & Newton & 0.50 & 254 & 0 & 0.179 & 7.4e-14 \\
+     & NCR & 1.00 & 14 & 5 & 0.041 & 3.8e-11 \\
+     & ARC & 1.00 & 8 & 0 & 0.031 & 1.0e-10 \\
+     & ACRN & 0.00 & 501 & 499 & 2.180 & --- \\
+    \hline
+    LogSumExp n=50 & Newton & 0.00 & 500 & 0 & 1.334 & --- \\
+     & NCR & 1.00 & 12 & 0 & 0.110 & 4.7e-10 \\
+     & ARC & 1.00 & 12 & 0 & 0.096 & 1.9e-10 \\
+     & ACRN & 0.00 & 501 & 496 & 14.990 & --- \\
+    \hline
+  \end{tabular}
+\end{table}

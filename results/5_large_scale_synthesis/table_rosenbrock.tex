@@ -1,0 +1,30 @@
+\begin{table}[ht]
+  \centering
+  \caption{Synthesis results on Rosenbrock (nonconvex, chain). $\varepsilon_g = 10^{-7}$, max\_iter = 500. Median over 2 starting points.}
+  \label{tab:synth_rosenbrock}
+  \begin{tabular}{|l|l|r|r|r|r|r|}
+    \hline
+    \textbf{Problem} & \textbf{Method} & \textbf{Rate} & \textbf{$k$} & \textbf{Rej.} & \textbf{Time\,(s)} & \textbf{$\|\nabla f\|$} \\
+    \hline\hline
+    Rosenbrock n=2 & Newton & 1.00 & 5 & 0 & 0.002 & 1.7e-09 \\
+     & NCR & 1.00 & 30 & 12 & 0.111 & 1.6e-09 \\
+     & ARC & 1.00 & 22 & 5 & 0.080 & 1.8e-08 \\
+     & ACRN & 0.00 & 501 & 498 & 3.163 & --- \\
+    \hline
+    Rosenbrock n=10 & Newton & 1.00 & 32 & 0 & 0.005 & 3.1e-11 \\
+     & NCR & 1.00 & 40 & 17 & 0.123 & 2.7e-08 \\
+     & ARC & 1.00 & 28 & 6 & 0.088 & 9.9e-11 \\
+     & ACRN & 0.00 & 501 & 500 & 3.814 & --- \\
+    \hline
+    Rosenbrock n=20 & Newton & 1.00 & 160 & 0 & 0.060 & 1.0e-09 \\
+     & NCR & 1.00 & 57 & 24 & 0.156 & 2.6e-08 \\
+     & ARC & 1.00 & 39 & 8 & 0.162 & 9.3e-09 \\
+     & ACRN & 0.00 & 501 & 500 & 4.157 & --- \\
+    \hline
+    Rosenbrock n=50 & Newton & 1.00 & 178 & 0 & 0.053 & 2.3e-08 \\
+     & NCR & 1.00 & 102 & 47 & 0.765 & 1.1e-08 \\
+     & ARC & 1.00 & 71 & 16 & 0.668 & 9.4e-09 \\
+     & ACRN & 0.00 & 501 & 498 & 12.739 & --- \\
+    \hline
+  \end{tabular}
+\end{table}

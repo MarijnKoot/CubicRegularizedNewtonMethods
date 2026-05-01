@@ -1,0 +1,72 @@
+
+% ── NCR: σ₀ sensitivity ──────────────────────────────
+\begin{table}[ht]
+  \centering
+  \caption{$\sigma_0$ sensitivity for \textbf{NCR} (5 seeds per cell, $\varepsilon_g = 10^{-7}$, $n=10$ unless noted). Cell: \textit{rate} / \textit{med.\ $k$}. Rate 1.00 = all seeds converged. $\dagger$ marks the column closest to $\sigma_\mathrm{ref} = 2L_3$.}
+  \label{tab:sigma_ncr}
+  \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    \textbf{Problem} & $10^{-3.4}$ & $10^{-0.4}$ & $10^{1.6}$ & $10^{4.6}$$^\dagger$ & $10^{7.6}$ \\
+    \hline\hline
+    Quadratic κ=1e2 & 1.00 / 2 & 1.00 / 4 & 1.00 / 9 & 1.00 / 18 & 1.00 / 28 \\
+    \hline
+    Quadratic κ=1e6 & 1.00 / 2 & 1.00 / 4 & 1.00 / 8 & 1.00 / 18 & 1.00 / 28 \\
+    \hline
+    LogSumExp n=10 & 0.20 / 19 & 0.20 / 9 & 0.20 / 15 & 0.20 / 25 & 0.20 / 35 \\
+    \hline
+    Rosenbrock n=2 & 1.00 / 46 & 1.00 / 36 & 1.00 / 28 & 1.00 / 24 & 1.00 / 33 \\
+    \hline
+    Rosenbrock n=10 & 1.00 / 65 & 1.00 / 55 & 1.00 / 50 & 1.00 / 50 & 1.00 / 60 \\
+    \hline
+    Rastrigin n=10 & 0.80 / 26 & 1.00 / 18 & 0.80 / 9 & 0.80 / 10 & 1.00 / 20 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+% ── ARC: σ₀ sensitivity ──────────────────────────────
+\begin{table}[ht]
+  \centering
+  \caption{$\sigma_0$ sensitivity for \textbf{ARC} (5 seeds per cell, $\varepsilon_g = 10^{-7}$, $n=10$ unless noted). Cell: \textit{rate} / \textit{med.\ $k$}. Rate 1.00 = all seeds converged. $\dagger$ marks the column closest to $\sigma_\mathrm{ref} = 2L_3$.}
+  \label{tab:sigma_arc}
+  \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    \textbf{Problem} & $10^{-3.4}$ & $10^{-0.4}$ & $10^{1.6}$ & $10^{4.6}$$^\dagger$ & $10^{7.6}$ \\
+    \hline\hline
+    Quadratic κ=1e2 & 1.00 / 2 & 1.00 / 4 & 1.00 / 9 & 1.00 / 18 & 1.00 / 28 \\
+    \hline
+    Quadratic κ=1e6 & 1.00 / 2 & 1.00 / 4 & 1.00 / 8 & 1.00 / 18 & 1.00 / 28 \\
+    \hline
+    LogSumExp n=10 & 0.20 / 15 & 0.20 / 9 & 0.20 / 15 & 0.20 / 25 & 0.20 / 35 \\
+    \hline
+    Rosenbrock n=2 & 1.00 / 31 & 1.00 / 26 & 1.00 / 25 & 1.00 / 24 & 1.00 / 33 \\
+    \hline
+    Rosenbrock n=10 & 1.00 / 44 & 1.00 / 38 & 1.00 / 36 & 1.00 / 38 & 1.00 / 49 \\
+    \hline
+    Rastrigin n=10 & 1.00 / 17 & 0.80 / 12 & 1.00 / 9 & 0.80 / 10 & 0.60 / 19 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+% ── ACRN: σ₀ sensitivity ──────────────────────────────
+\begin{table}[ht]
+  \centering
+  \caption{$\sigma_0$ sensitivity for \textbf{ACRN} (5 seeds per cell, $\varepsilon_g = 10^{-7}$, $n=10$ unless noted). Cell: \textit{rate} / \textit{med.\ $k$}. Rate 1.00 = all seeds converged. $\dagger$ marks the column closest to $\sigma_\mathrm{ref} = 2L_3$.}
+  \label{tab:sigma_acrn}
+  \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    \textbf{Problem} & $10^{-3.4}$ & $10^{-0.4}$ & $10^{1.6}$ & $10^{4.6}$$^\dagger$ & $10^{7.6}$ \\
+    \hline\hline
+    Quadratic κ=1e2 & 1.00 / 12 & 1.00 / 21 & 1.00 / 27 & 1.00 / 36 & 1.00 / 45 \\
+    \hline
+    Quadratic κ=1e6 & 1.00 / 12 & 1.00 / 21 & 1.00 / 27 & 1.00 / 36 & 1.00 / 45 \\
+    \hline
+    LogSumExp n=10 & 0.00 / --- & 0.00 / --- & 0.00 / --- & 0.00 / --- & 0.00 / --- \\
+    \hline
+    Rosenbrock n=2 & 0.00 / --- & 0.00 / --- & 0.00 / --- & 0.00 / --- & 0.00 / --- \\
+    \hline
+    Rosenbrock n=10 & 0.00 / --- & 0.00 / --- & 0.00 / --- & 0.00 / --- & 0.00 / --- \\
+    \hline
+    Rastrigin n=10 & 0.00 / --- & 0.00 / --- & 0.00 / --- & 0.00 / --- & 0.00 / --- \\
+    \hline
+  \end{tabular}
+\end{table}

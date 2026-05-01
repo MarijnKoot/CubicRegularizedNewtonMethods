@@ -1,0 +1,16 @@
+\begin{table}[ht]
+  \centering
+  \caption{ACRN vs.\ NCR iteration and runtime gain on LogSumExp (median over starts; ``---'' = no convergence).}
+  \label{tab:acrn_gain}
+  \begin{tabular}{|r|r|r|r|r|r|r|}
+    \hline
+    $n$ & $k_\mathrm{NCR}$ & $k_\mathrm{ACRN}$ & $\Delta k$ & $t_\mathrm{NCR}$\,(s) & $t_\mathrm{ACRN}$\,(s) & $\Delta t$ \\
+    \hline\hline
+    10 & 10 & 394 & 39.40× & 0.022 & 2.403 & 107.10× \\
+    \hline
+    20 & 14 & --- & --- & 0.041 & 2.180 & 53.67× \\
+    \hline
+    50 & 12 & --- & --- & 0.110 & 14.990 & 135.80× \\
+    \hline
+  \end{tabular}
+\end{table}

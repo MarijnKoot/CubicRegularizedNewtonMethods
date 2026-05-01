@@ -1,0 +1,55 @@
+\begin{table}[ht]
+  \centering
+  \caption{Synthesis results on ill-conditioned quadratics. $\varepsilon_g = 10^{-7}$, max\_iter = 500. Median over 2 starting points.}
+  \label{tab:synth_illcond}
+  \begin{tabular}{|l|l|r|r|r|r|r|}
+    \hline
+    \textbf{Problem} & \textbf{Method} & \textbf{Rate} & \textbf{$k$} & \textbf{Rej.} & \textbf{Time\,(s)} & \textbf{$\|\nabla f\|$} \\
+    \hline\hline
+    Quadratic n=10 κ=1e+02 & Newton & 1.00 & 1 & 0 & 0.010 & 5.7e-15 \\
+     & NCR & 1.00 & 4 & 0 & 0.003 & 7.2e-09 \\
+     & ARC & 1.00 & 4 & 0 & 0.013 & 7.2e-09 \\
+     & ACRN & 1.00 & 1 & 0 & <0.001 & 4.5e-12 \\
+    \hline
+    Quadratic n=10 κ=1e+04 & Newton & 1.00 & 1 & 0 & <0.001 & 6.6e-13 \\
+     & NCR & 1.00 & 4 & 0 & 0.013 & 3.3e-10 \\
+     & ARC & 1.00 & 4 & 0 & 0.013 & 3.3e-10 \\
+     & ACRN & 1.00 & 1 & 0 & <0.001 & 4.6e-12 \\
+    \hline
+    Quadratic n=10 κ=1e+06 & Newton & 1.00 & 1 & 0 & <0.001 & 9.1e-11 \\
+     & NCR & 1.00 & 4 & 0 & 0.014 & 6.4e-11 \\
+     & ARC & 1.00 & 4 & 0 & 0.014 & 6.4e-11 \\
+     & ACRN & 1.00 & 1 & 0 & 0.001 & 9.1e-11 \\
+    \hline
+    Quadratic n=20 κ=1e+02 & Newton & 1.00 & 1 & 0 & <0.001 & 1.0e-14 \\
+     & NCR & 1.00 & 5 & 0 & 0.026 & 2.1e-16 \\
+     & ARC & 1.00 & 5 & 0 & 0.015 & 2.1e-16 \\
+     & ACRN & 1.00 & 1 & 0 & 0.002 & 4.3e-12 \\
+    \hline
+    Quadratic n=20 κ=1e+04 & Newton & 1.00 & 1 & 0 & <0.001 & 1.3e-12 \\
+     & NCR & 1.00 & 4 & 0 & 0.014 & 4.4e-08 \\
+     & ARC & 1.00 & 4 & 0 & 0.014 & 4.4e-08 \\
+     & ACRN & 1.00 & 1 & 0 & 0.001 & 4.2e-12 \\
+    \hline
+    Quadratic n=20 κ=1e+06 & Newton & 1.00 & 1 & 0 & <0.001 & 1.5e-10 \\
+     & NCR & 1.00 & 4 & 0 & 0.004 & 3.8e-08 \\
+     & ARC & 1.00 & 4 & 0 & 0.014 & 3.8e-08 \\
+     & ACRN & 1.00 & 1 & 0 & 0.012 & 1.6e-10 \\
+    \hline
+    Quadratic n=50 κ=1e+02 & Newton & 1.00 & 1 & 0 & <0.001 & 2.6e-14 \\
+     & NCR & 1.00 & 5 & 0 & 0.032 & 2.2e-13 \\
+     & ARC & 1.00 & 5 & 0 & 0.032 & 2.2e-13 \\
+     & ACRN & 1.00 & 1 & 0 & 0.013 & 1.5e-11 \\
+    \hline
+    Quadratic n=50 κ=1e+04 & Newton & 1.00 & 1 & 0 & <0.001 & 1.9e-12 \\
+     & NCR & 1.00 & 5 & 0 & 0.044 & 1.7e-14 \\
+     & ARC & 1.00 & 5 & 0 & 0.044 & 1.7e-14 \\
+     & ACRN & 1.00 & 1 & 0 & 0.014 & 1.5e-11 \\
+    \hline
+    Quadratic n=50 κ=1e+06 & Newton & 1.00 & 1 & 0 & <0.001 & 1.6e-10 \\
+     & NCR & 1.00 & 5 & 0 & 0.035 & 4.2e-15 \\
+     & ARC & 1.00 & 5 & 0 & 0.040 & 4.2e-15 \\
+     & ACRN & 1.00 & 1 & 0 & 0.013 & 1.7e-10 \\
+    \hline
+  \end{tabular}
+\end{table}

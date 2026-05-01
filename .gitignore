@@ -1,0 +1,7 @@
+*.csv
+.venv/
+venv/
+__pycache__/
+*.pyc
+pycutest_cache_holder/
+CLAUDE.md
