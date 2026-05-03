@@ -41,7 +41,16 @@ source venv/bin/activate
 pip install -e .          # installs src/ as editable package "newton-methods"
 ```
 
-Key dependencies: `numpy`, `scipy`, `matplotlib`, `pandas`, `pycutest`.
+Key dependencies (tested versions):
+
+| Package | Version |
+|---------|---------|
+| Python | 3.12.3 |
+| numpy | 2.4.3 |
+| scipy | 1.17.1 |
+| matplotlib | 3.10.8 |
+| pandas | 3.0.1 |
+| pycutest | 1.8.0 |
 
 ## Running experiments
 
